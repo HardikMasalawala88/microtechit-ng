@@ -1,0 +1,149 @@
+.contact-wrapper {
+  padding: 100px 15px;
+}
+
+.contact-wrapper .lets-talk {
+  border-radius: 10px;
+  background-color: #13103F;
+  padding: 50px 50px 10px 50px;
+}
+.contact-wrapper .lets-talk .inner-box {
+  display: flex;
+  padding-bottom: 15px;
+}
+.contact-wrapper .lets-talk .inner-box .icon {
+  font-size: 24px;
+  color: #13103F;
+  max-width: 55px;
+  height: 55px;
+  width: 100%;
+  background: #fff;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 55px;
+}
+
+.contact-wrapper .lets-talk .inner-box .heading {
+  padding-left: 10px;
+}
+.contact-wrapper .lets-talk .inner-box h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+  margin-bottom: -2px;
+}
+.contact-wrapper .lets-talk .inner-box p a {
+  color: #fff;
+  font-size: 16px;
+  word-break: break-all;
+}
+.contact-wrapper .lets-talk h5 {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+.contact-wrapper .lets-talk h3,
+.contact-wrapper .contact-form h3 {
+  padding: 10px 0 20px 0;
+  font-weight: bold;
+  color: #fff;
+}
+.contact-wrapper .contact-form {
+  padding-left: 15px;
+}
+
+h4.sub-title {
+  color: #13103F;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.contact-wrapper .contact-form h3 {
+  color: #03B471;
+}
+.contact-wrapper .contact-form .col:nth-child(odd) {
+  padding-left: 0;
+  padding-right: 10px;
+}
+.contact-wrapper .contact-form .col:nth-child(even) {
+  padding-right: 0;
+  padding-left: 10px;
+}
+.contact-wrapper .contact-form .area .col {
+  padding-right: 0;
+}
+.contact-wrapper .contact-form input,
+.contact-wrapper .contact-form textarea {
+  font-size: 20px;
+  background-color: #f6f8f9;
+  border-radius: 5px;
+  border: 0;
+  height: 60px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.contact-wrapper .contact-form textarea {
+  height: 120px;
+  margin-bottom: 30px;
+}
+.contact-wrapper .contact-form form .row:last-child .col {
+  padding-right: 0;
+}
+.contact-wrapper .contact-form input:focus,
+.contact-wrapper .contact-form textarea:focus {
+  box-shadow: none;
+}
+
+.theme-btn {
+  position: relative;
+  display: inline-flex;
+  padding: 10px 30px;
+  background: #03B471;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  overflow: hidden;
+  border: none;
+}
+
+.theme-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-btn::before {
+  content: "";
+  position: absolute;
+  top: var(--x);
+  left: var(--y);
+  transform: translate(-50%, -50%);
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: #13103F;
+  transition: width 0.5s, height 0.5s;
+}
+
+.theme-btn:hover:before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Dark Theme */
+
+.contact-wrapper .contact-form .light-text {
+  color: #fff;
+}
+
+.contact-wrapper .contact-form .light-btn {
+  background-color: rgb(255, 255, 255);
+  color: #03B471;
+}
+
+

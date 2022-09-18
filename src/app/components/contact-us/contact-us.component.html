@@ -1,0 +1,184 @@
+
+
+<!-- Contact Form -->
+<section class="contact-wrapper" id="contact">
+    <div style="width: 85%;" class="container ast-container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5 col-xs-12 pl-0" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                <div class="lets-talk">
+                    <h5>Let's Talk</h5>
+                    <h3 class="main-title">Speak with Expert Members.</h3>
+                    <div class="inner-box">
+                        <div class="icon">
+                            <fa-icon [icon]="faEnvelope"></fa-icon>
+                        </div>
+                        <div class="heading">
+                            <h4>Email:</h4>
+                            <p><a href="mailto:axaay@microtechit.in">axaay@microtechit.in</a></p>
+                        </div>
+                    </div>
+
+                    <div class="inner-box">
+                        <div class="icon">
+                            <fa-icon [icon]="faPhone"></fa-icon>
+                        </div>
+                        <div class="heading">
+                            <h4>Phone:</h4>
+                            <p><a href="tel:{{mobileNo}}">+91 {{ mobileNo }}</a></p>
+                        </div>
+                    </div>
+
+                    <div class="inner-box">
+                        <div class="icon">
+                            <fa-icon [icon]="faMap"></fa-icon>
+                        </div>
+                        <div class="heading">
+                            <h4>Address:</h4>
+                            <p>
+                                <a>
+                                    G14, RAJWORLD SHOPPING CENTRE, Canal Rd, Palanpur Jakatnaka, Surat, Gujarat 395005
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   
+            <div class="col-lg-7 col-md-7 col-xs-12 pr-0" data-aos="fade-up"data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+                <div class="contact-form">
+                    <!-- Google Map -->
+                    <section class="container-fluid map-section px-0">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14878.092710627183!2d72.7725773!3d21.2110927!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbbcbc9276cfe238e!2sMICROTECH%20IT%20SERVICES!5e0!3m2!1sen!2sin!4v1656840668389!5m2!1sen!2sin"
+                        referrerpolicy="no-referrer-when-downgrade" width="100%" height="430" style="border:0;" allowfullscreen=""
+                        loading="lazy"></iframe>
+                    </section>
+                    <!-- <h4 style="font-size: 25px; font-weight: bold;" class="sub-title">Connect here</h4> -->
+                    <!-- <h3 style="font-weight: 700; font-size: 35px;" [ngClass]="{'light-text': isActive}" class="main-title">Fill The Form</h3> -->
+                    <!-- <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="ngName">ngName:</label>
+                            <input type="text" id="ngName" autocomplete="off" formControlName="ngName" class="form-control"
+                                [ngClass]="{ 'is-invalid': f.ngName.touched && f.ngName.errors }" />
+                            <div class="alert alert-danger" *ngIf="f.ngName.touched && f.ngName.errors">
+                                <div *ngIf="f.ngName.errors.required">ngName is required</div>
+                            </div>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="ngWebsite">ngWebsite:</label>
+                            <input autocomplete="off" type="text" id="ngWebsite" formControlName="ngWebsite" class="form-control"
+                                [ngClass]="{ 'is-invalid': f.ngWebsite.touched && f.ngWebsite.errors}">
+                            <div class="alert alert-danger" *ngIf="f.ngWebsite.touched && f.ngWebsite.errors">
+                                <div *ngIf="f.ngWebsite.errors.required">ngWebsite is Required!</div>
+                            </div>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="ngPhoneNumber">ngPhoneNumber:</label>
+                            <input autocomplete="off" id="ngPhoneNumber" type="text" formControlName="ngPhoneNumber" class="form-control"
+                                [ngClass]="{ 'is-invalid':f.ngPhoneNumber.touched &&  f.ngPhoneNumber.errors}">
+                            <div class="alert alert-danger" *ngIf="f.ngPhoneNumber.touched && f.ngPhoneNumber.errors">
+                                <div *ngIf="f.ngPhoneNumber.errors.required">ngPhone  Number is Required!</div>
+                                <div *ngIf="f.ngPhoneNumber.errors.pattern">ngPhone Number  is not valid.</div>
+                            </div>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="ngEmail">ngEmail:</label>
+                            <input autocomplete="off" id="ngEmail" type="text" formControlName="ngEmail" class="form-control"
+                                [ngClass]="{ 'is-invalid': f.ngEmail.touched && f.ngEmail.errors}">
+                            <div class="alert alert-danger" *ngIf="f.ngEmail.touched && f.ngEmail.errors">
+                                <div *ngIf="f.ngEmail.errors.required">ngEmail is Required!</div>
+                                <div *ngIf="f.ngEmail.errors.pattern">ngEmail is not valid.</div>
+                            </div>
+                        </div> 
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                            <button type="button" (click)="onClear()" class="btn btn-warning float-right">
+                                Reset
+                            </button>
+                        </div>
+                    </form> -->
+                    <!-- <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" id="ngName" autocomplete="off" formControlName="ngName" class="form-control" placeholder="Name"
+                                [ngClass]="{ 'is-invalid': f.ngName.touched && f.ngName.errors }" placeholder="Name">
+                                <div class="alert alert-danger" *ngIf="f.ngName.touched && f.ngName.errors">
+                                    <div *ngIf="f.ngName.errors.required">Name is required</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <input autocomplete="off" id="ngEmail" type="text" formControlName="ngEmail" class="form-control"
+                                    [ngClass]="{ 'is-invalid': f.ngEmail.touched && f.ngEmail.errors}" placeholder="Email Number">
+                                <div class="alert alert-danger" *ngIf="f.ngEmail.touched && f.ngEmail.errors" >
+                                    <div *ngIf="f.ngEmail.errors.required">Email is Required!</div>
+                                    <div *ngIf="f.ngEmail.errors.pattern">Email is not valid.</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <input autocomplete="off" id="ngPhoneNumber" type="text" formControlName="ngPhoneNumber" class="form-control"
+                                    [ngClass]="{ 'is-invalid':f.ngPhoneNumber.touched &&  f.ngPhoneNumber.errors}" placeholder="Phone Number">
+                                <div class="alert alert-danger" *ngIf="f.ngPhoneNumber.touched && f.ngPhoneNumber.errors">
+                                    <div *ngIf="f.ngPhoneNumber.errors.required">Phone Number is Required!</div>
+                                    <div *ngIf="f.ngPhoneNumber.errors.pattern">Phone Number is not valid.</div>
+                                </div>
+                                
+                            </div>
+                            <div class="col">
+                                <input autocomplete="off" type="text" id="ngWebsite" formControlName="ngWebsite" class="form-control"
+                                    [ngClass]="{ 'is-invalid': f.ngWebsite.touched && f.ngWebsite.errors}"  placeholder="Website">
+                                <div class="alert alert-danger" *ngIf="f.ngWebsite.touched && f.ngWebsite.errors">
+                                    <div *ngIf="f.ngWebsite.errors.required">Website is Required!</div>
+                                    <div *ngIf="f.ngWebsite.errors.pattern">Website is not valid.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row area">
+                            <div class="col">
+                                <textarea autocomplete="off" id="ngMsg" type="text" formControlName="ngMsg" class="form-control"
+                                    [ngClass]="{ 'is-invalid': f.ngMsg.touched && f.ngMsg.errors}" placeholder="Message"></textarea>
+                                <div class="alert alert-danger" *ngIf="f.ngMsg.touched && f.ngMsg.errors">
+                                    <div *ngIf="f.ngMsg.errors.required">Message is Required!</div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <button [ngClass]="{'light-btn': isActive}" type="submit" id="btnSubmit" class="theme-btn"><span>Contact us</span></button>
+                    </form> -->
+                    <!-- <form name="contactus" id="contactus" method="post">
+                        <div class="row">
+                            <div class="col">
+                                
+                                <input type="text" id="Name" name="Name" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col">
+                                <input type="email" [(ngModel)]="ngEmail" id="Email" name="Email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" id="Phone" [(ngModel)]="ngEmail" name="Phone" class="form-control" placeholder="Phone Number(i.e. +x xxx xxx xxxx)" maxlength="15" onkeypress="return isNumberKey(this)">
+                            </div>
+                            <div class="col">
+                                <input type="text" id="Website" name="Website" class="form-control" placeholder="Website">
+                            </div>
+                        </div>
+
+                        <div class="row area">
+                            <div class="col">
+                                <textarea type="text" id="Message" name="Message" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                       
+                        <button [ngClass]="{'light-btn': isActive}" type="button" id="btnSubmit" class="theme-btn"><span>Contact us</span></button>
+                    </form> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

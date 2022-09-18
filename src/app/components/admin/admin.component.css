@@ -1,0 +1,8 @@
+.back {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.back:hover {
+  opacity: 1;
+}

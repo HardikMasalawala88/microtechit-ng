@@ -1,0 +1,28 @@
+<section class="page-section main-banner container-fluid" [ngClass]="{'main-banner-dark': isActive}" id="home">
+    <div class="ast-container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-xs-12 banner-text fade-up" data-aos="fade-up" data-aos-duration="3000" >
+          <h3 style="font-size: 25px; font-weight: bold;" class="title">TECHNOLOGY & SOLUTION</h3>
+          <h1 [ngClass]="{'dark-text': isActive}">Digital Technology,<br/> IT Solution & Services <br/> Around the World</h1>
+          <p style="color: #13103F;"[ngClass]="{'dark-text': isActive}">We are leading technology solutions providing company<br> all over the world.</p>
+          <a [ngClass]="{'theme-dark-btn': isActive}" href="#contact" class="theme-btn"><span>Contact Us</span></a>
+          <script>
+            const btn = document.querySelector('.theme-btn');
+            btn.onmousemove = function(e){
+                const x = e.pageX - btn.offsetLeft;
+                const y = e.pageY - btn.offsetTop;
+      
+                btn.style.setProperty('--x', x + 'px');
+                btn.style.setProperty('--y', y + 'px');
+            }
+          </script>
+        </div>
+  
+        <div class="col-lg-6 col-md-6 col-xs-12 banner-img" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+          <img src="assets/images/pp_.png" class="img-fluid">
+        </div>
+        <!-- <img src="assets/images/dot_.png" alt=""> -->
+      </div>
+    </div>
+  </section>
+  

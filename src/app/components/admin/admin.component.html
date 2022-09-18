@@ -1,0 +1,20 @@
+<div class="container">
+    <div routerLink="/" class="back d-flex align-items-center mt-2"> <fa-icon style="margin-right: 5px;" [icon]='faLeft'></fa-icon> <b>Home</b>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+       <h2>Change Number</h2>
+    </div>
+    <div class="form-group d-flex justify-content-center">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" [formGroup]="form">
+            <label for="number">Enter No.</label>
+            <input formControlName="mobile" type="text" id="number" class="form-control" [ngClass]="{'is-invalid': form.controls.mobile.touched && form.controls.mobile.errors}">
+            <div class="invalid-feedback" *ngIf="form.controls.mobile.errors">
+                <div *ngIf="form.controls.mobile.errors.required">Mobile No. is required</div>
+                <div *ngIf="form.controls.mobile.errors.minlength">Mobile No. must be Valid.</div>
+            </div>
+            <div class="btn-group d-flex justify-content-center mt-3">
+                <button [disabled]="f.invalid" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

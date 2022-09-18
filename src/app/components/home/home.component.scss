@@ -1,0 +1,176 @@
+.main-banner {
+  height: 900px;
+  background-image: linear-gradient(to bottom right, #f7f7f7, #c2d5c8);
+  padding: 60px 15px;
+  /* margin: 0 50px; */
+  position: relative;
+  z-index: 1;
+  border-radius: 0 0 0 200px;
+}
+
+.main-banner-dark {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(67, 78, 82),
+    rgb(42, 54, 58)
+  );
+}
+
+.main-banner .banner-text .title {
+  color: #13103F;
+}
+
+.main-banner .banner-text .dark-text {
+  color: #fff;
+}
+
+.main-banner:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background-image: url('../../../assets/images/dot_.png');
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  animation-name: example1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes example1 {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 8px;
+    top: 0px;
+  }
+  50% {
+    left: 16px;
+    top: 8px;
+  }
+  75% {
+    left: 0px;
+    top: 16px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+.main-banner .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 900px;
+}
+.main-banner .banner-text {
+  padding-left: 0;
+}
+.main-banner .banner-text h3 {
+  color: #03B471;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-left: 90px;
+}
+.main-banner .banner-text h1 {
+  color: #03B471;
+  font-size: 45px;
+  padding: 20px 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: 90px;
+}
+.main-banner .banner-text p {
+  font-size: 20px;
+  color: #03B471;
+  margin-bottom: 50px;
+  margin-left: 90px;
+}
+.main-banner img {
+  filter: drop-shadow(5px 5px 25px rgba(0, 0, 0, 0.1));
+  position: relative;
+  animation-name: example;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  height: 35rem;
+  width: 35rem;
+  margin-left: 50px;
+}
+.main-banner .theme-btn {
+  position: relative;
+  margin-left: 90px;
+  display: inline-flex;
+  padding: 10px 30px;
+  background: #03B471;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.main-banner .theme-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.main-banner .theme-btn::before {
+  content: "";
+  position: absolute;
+  top: var(--x);
+  left: var(--y);
+  transform: translate(-50%, -50%);
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: #13103F;
+  transition: width 0.5s, height 0.5s;
+}
+
+.main-banner .theme-btn:hover:before {
+  width: 300px;
+  height: 300px;
+}
+
+.main-banner .theme-dark-btn {
+  background: rgb(255, 255, 255);
+  color: #03B471;
+}
+
+@keyframes example {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@media screen and (max-width: 800px){
+    .ast-container{
+      width: 80%;
+      
+    }
+    .banner-text h1{
+      font-size: 25px;
+    }
+   .banner-img{
+    
+    position: absolute;
+    top: 900px;
+
+    
+  } 
+  .banner-img{
+    width: 70%;
+    height: 20px;
+  }
+}
